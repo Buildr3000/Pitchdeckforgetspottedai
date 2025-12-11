@@ -13,9 +13,9 @@ export function CTASlide() {
         <motion.h2 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="text-3xl md:text-5xl font-['IBM_Plex_Mono',monospace] font-bold mb-8 text-[#564256]"
+          className="text-3xl md:text-5xl font-['IBM_Plex_Mono',monospace] font-bold mb-12 text-[#564256] whitespace-nowrap"
         >
-            Développons la première régie <span className="text-[#fc814a]">GEO</span>
+            Construisons ensemble <span className="text-[#fc814a]">les standards</span> de demain
         </motion.h2>
         
         <motion.p 
@@ -24,8 +24,8 @@ export function CTASlide() {
           transition={{ delay: 0.2 }}
           className="font-['Inter',sans-serif] text-[#5f5c63] text-lg md:text-xl mb-12 w-full font-light leading-relaxed"
         >
-            Le Search a changé. Le modèle publicitaire aussi.<br/>
-            Construisons ensemble le standard de demain.
+            Le search a changé. La monétisation aussi.<br/>
+            Restons en contrôle.
         </motion.p>
 
         <motion.div 

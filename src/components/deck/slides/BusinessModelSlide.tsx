@@ -10,7 +10,7 @@ export function BusinessModelSlide() {
       <div className="flex flex-col h-full justify-center">
         <SectionBadge label="Business model" />
         <h2 className="text-3xl md:text-5xl font-['IBM_Plex_Mono',monospace] font-bold mb-10 text-[#564256] text-left leading-tight">
-          Avec un business model aligné sur la <span className="text-[#fc814a]">création de valeur</span> et la réassurance
+          Avec un business model aligné sur la <span className="text-[#fc814a]">création de valeur</span> et <span className="text-[#fc814a]">la réassurance</span>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -29,7 +29,7 @@ export function BusinessModelSlide() {
                     </div>
                 </div>
                 <h3 className="font-['IBM_Plex_Mono',monospace] text-2xl text-[#564256] font-bold mb-3">Vente & Location</h3>
-                <p className="text-base text-[#5f5c63] font-light mb-8 max-w-sm">Achat de mention à vie ou visibilité temporaire sur des pages à fort trafic.</p>
+                <p className="text-base text-[#5f5c63] font-light mb-8 max-w-sm">Achat de mention à vie ou pour une durée limitée.</p>
                 
                 <div className="w-full bg-gray-50 rounded-xl p-6 border border-gray-100">
                     <div className="text-xs text-[#5f5c63] uppercase tracking-wider font-bold mb-2">Commission</div>

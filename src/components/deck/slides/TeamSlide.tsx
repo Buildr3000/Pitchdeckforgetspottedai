@@ -13,7 +13,7 @@ export function TeamSlide() {
     <SlideContainer>
       <div className="flex flex-col h-full justify-center">
         <SectionBadge label="Équipe" />
-        <h2 className="text-3xl md:text-5xl font-['IBM_Plex_Mono',monospace] font-bold mb-10 text-[#564256] text-left leading-tight">
+        <h2 className="text-3xl md:text-5xl font-['IBM_Plex_Mono',monospace] font-bold mb-10 text-[#564256] text-left leading-tight whitespace-nowrap">
           Une équipe complémentaire, <span className="text-[#fc814a]">spécialiste du SEO</span>
         </h2>
         
@@ -26,7 +26,8 @@ export function TeamSlide() {
                     initials: "AM",
                     image: alexisPhoto,
                     logo: linkarLogo,
-                    logoClass: "h-6 w-[100px] mt-5"
+                    logoClass: "mt-8",
+                    style: { height: '28px', width: 'auto', marginTop: '18px' }
                 },
                 { 
                     name: "Tom Rouchy", 
@@ -35,7 +36,8 @@ export function TeamSlide() {
                     initials: "TR",
                     image: tomPhoto,
                     logo: combakLogo,
-                    logoClass: "h-10 w-[160px] mt-5"
+                    logoClass: "mt-5",
+                    style: { height: '65px', width: 'auto' }
                 }
             ].map((member, i) => (
                 <motion.div 
@@ -65,7 +67,12 @@ export function TeamSlide() {
                         {member.desc}
                     </p>
                     {member.logo && (
-                        <img src={member.logo} alt="Logo" className={`${member.logoClass} object-contain`} />
+                        <img 
+                            src={member.logo} 
+                            alt="Logo" 
+                            className={`${member.logoClass} object-contain`} 
+                            style={member.style}
+                        />
                     )}
                 </motion.div>
             ))}

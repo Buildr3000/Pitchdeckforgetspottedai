@@ -57,6 +57,16 @@ export function ProblemSlide() {
             </motion.div>
           ))}
         </div>
+
+        {/* Sources */}
+        <div className="mt-8 pt-4 border-t border-gray-100">
+          <div className="flex flex-wrap gap-x-6 gap-y-1 text-[10px] font-['IBM_Plex_Mono',monospace] text-[#5f5c63]/60">
+            <span>Sources :</span>
+            <span>OpenAI</span>
+            <span>SparkToro / Datos</span>
+            <span>Reuters Institute</span>
+          </div>
+        </div>
       </div>
     </SlideContainer>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { SlideContainer } from '../SlideContainer';
 import { motion } from 'motion/react';
-import { Search, Bot, ArrowRight, Database, FileText } from 'lucide-react';
+import { Search, Bot, ArrowRight, FileText, Plus } from 'lucide-react';
 import { SectionBadge } from '../SectionBadge';
 
 export function PositioningSlide() {
@@ -18,7 +18,7 @@ export function PositioningSlide() {
         </p>
 
         {/* Visual Diagram of Decorrelation */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 w-full max-w-[1284px] mx-auto">
             {/* SEO Classic Flow */}
             <motion.div 
                 initial={{ opacity: 0, x: -20 }}
@@ -86,6 +86,46 @@ export function PositioningSlide() {
                   <span className="block">Indice de corrélation 0,664.</span>
                 </p>
             </motion.div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-[1284px] mx-auto">
+          <div className="flex justify-center">
+            <div className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm w-1/2 flex items-center justify-center">
+              <div className="flex items-center gap-3">
+                <Search className="w-5 h-5 text-[#564256]" />
+                <div className="flex flex-col leading-tight">
+                  <span className="text-[11px] font-semibold uppercase tracking-wide text-[#564256]">SEO</span>
+                  <span className="text-sm font-medium text-[#5f5c63]">On-site</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2 w-full">
+            <div className="bg-[#fff7ed] border border-[#ffedd5] rounded-xl p-4 shadow-sm flex-1 flex items-center justify-center text-left">
+              <div className="flex items-center gap-3">
+                <Search className="w-5 h-5 text-[#fc814a]" />
+                <div className="flex flex-col leading-tight">
+                  <span className="text-[11px] font-semibold uppercase tracking-wide text-[#fc814a]">SEO</span>
+                  <span className="text-sm font-semibold text-[#fc814a]">On-site</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex-shrink-0">
+              <Plus className="w-6 h-6 text-[#fc814a]" />
+            </div>
+
+            <div className="bg-[#fff7ed] border border-[#ffedd5] rounded-xl p-4 shadow-sm flex-1 flex items-center justify-center text-left">
+              <div className="flex items-center gap-3">
+                <Bot className="w-5 h-5 text-[#fc814a]" />
+                <div className="flex flex-col leading-tight">
+                  <span className="text-[11px] font-semibold uppercase tracking-wide text-[#fc814a]">SEO</span>
+                  <span className="text-sm font-semibold text-[#fc814a]">Off-site</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </SlideContainer>

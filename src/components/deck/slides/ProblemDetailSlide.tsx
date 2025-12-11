@@ -1,7 +1,7 @@
 import React from 'react';
 import { SlideContainer } from '../SlideContainer';
 import { motion } from 'motion/react';
-import { Search, AlertCircle, Clock, FileQuestion } from 'lucide-react';
+import { Search, AlertCircle, FileQuestion, BarChart3, Coins, Layers } from 'lucide-react';
 import { SectionBadge } from '../SectionBadge';
 
 export function ProblemDetailSlide() {
@@ -17,14 +17,15 @@ export function ProblemDetailSlide() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start p-3 md:p-5">
           {/* Colonne Annonceur */}
           <div className="space-y-5 bg-white border border-gray-100 rounded-2xl p-6 shadow-sm w-full md:max-w-xl mx-auto">
-            <div className="font-['IBM_Plex_Mono',monospace] text-sm font-bold text-[#564256] uppercase tracking-wide mb-1">
-              Annonceur
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-1.5 h-6 bg-[#fc814a] rounded-full"></div>
+              <span className="font-['IBM_Plex_Mono',monospace] text-base font-bold text-[#564256] uppercase tracking-wider">Annonceur</span>
             </div>
             <div className="space-y-3">
               {[
+                { text: "Que faire une fois le site optimisé SEO ?", icon: <FileQuestion className="w-4 h-4 text-[#fc814a]" /> },
                 { text: "Quelle source influence ChatGPT ?", icon: <Search className="w-4 h-4 text-[#fc814a]" /> },
-                { text: "Comment contacter les bons éditeurs ?", icon: <AlertCircle className="w-4 h-4 text-[#fc814a]" /> },
-                { text: "Processus manuel et chronophage", icon: <Clock className="w-4 h-4 text-[#fc814a]" /> }
+                { text: "Comment contacter les bons éditeurs ?", icon: <AlertCircle className="w-4 h-4 text-[#fc814a]" /> }
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 bg-gray-50 border border-gray-100 px-3 py-2 rounded-xl">
                   <div className="bg-[#fc814a]/10 p-1.5 rounded-lg">
@@ -38,18 +39,21 @@ export function ProblemDetailSlide() {
 
           {/* Colonne Éditeur */}
           <div className="space-y-5 bg-white border border-gray-100 rounded-2xl p-6 shadow-sm w-full md:max-w-xl mx-auto">
-            <div className="font-['IBM_Plex_Mono',monospace] text-sm font-bold text-[#564256] uppercase tracking-wide mb-1">
-              Éditeur
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-1.5 h-6 bg-[#fc814a] rounded-full"></div>
+              <span className="font-['IBM_Plex_Mono',monospace] text-base font-bold text-[#564256] uppercase tracking-wider">Éditeur</span>
             </div>
             <div className="space-y-3">
               {[
-                "Comment démontrer que mon site est une source pour les IA ?",
-                "Comment monétiser ce levier de distribution ?",
-                "Comment gérer ça de manière scalable ?"
-              ].map((text, i) => (
-                <div key={i} className="flex items-start gap-3 bg-gray-50 border border-gray-100 px-3 py-2 rounded-xl">
-                  <div className="mt-1 w-2 h-2 rounded-full bg-[#fc814a]" />
-                  <span className="font-['IBM_Plex_Mono',monospace] text-[#564256] text-sm font-medium">{text}</span>
+                { text: "Comment démontrer que mon site est une source pour les IA ?", icon: <BarChart3 className="w-4 h-4 text-[#fc814a]" /> },
+                { text: "Comment monétiser ce levier de distribution ?", icon: <Coins className="w-4 h-4 text-[#fc814a]" /> },
+                { text: "Comment gérer ça de manière scalable ?", icon: <Layers className="w-4 h-4 text-[#fc814a]" /> }
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-3 bg-gray-50 border border-gray-100 px-3 py-2 rounded-xl">
+                  <div className="bg-[#fc814a]/10 p-1.5 rounded-lg">
+                    {item.icon}
+                  </div>
+                  <span className="font-['IBM_Plex_Mono',monospace] text-[#564256] text-sm font-medium">{item.text}</span>
                 </div>
               ))}
             </div>

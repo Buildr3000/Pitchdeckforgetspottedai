@@ -11,7 +11,7 @@ export function OuestFranceSlide() {
       <div className="flex flex-col h-full justify-center">
         <SectionBadge label="Cas média" />
         <h2 className="text-3xl md:text-5xl font-['IBM_Plex_Mono',monospace] font-bold mb-10 text-[#564256] text-left leading-tight">
-          Une opportunité stratégique pour <img src={ouestFranceLogo} alt="Ouest France" className="h-16 md:h-24 inline-block ml-3 align-middle" />
+          Une opportunité <span className="text-[#fc814a]">stratégique</span> pour <img src={ouestFranceLogo} alt="Ouest France" className="h-16 md:h-24 inline-block ml-3 align-middle" style={{ filter: 'brightness(0) saturate(100%) invert(15%) sepia(95%) saturate(6000%) hue-rotate(355deg) brightness(95%) contrast(115%)' }} />
         </h2>
         
         <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch mx-auto">
@@ -20,18 +20,18 @@ export function OuestFranceSlide() {
             <div className="flex flex-col gap-6">
                 {[
                     {
-                        title: "Monétisation",
-                        desc: "Valorisation des 'Sleeping Assets' (archives) et nouveaux revenus incrémentaux.",
+                        title: "Monétisation des contenus Ouest-France Shopping",
+                        desc: "Générez des revenus additionnels grâce à l'intégration de produits locaux directement dans vos articles.",
                         icon: <MousePointer2 className="w-6 h-6 text-[#fc814a]" />
                     },
                     {
-                        title: "Marque blanche",
-                        desc: "Synergies technologiques pour équiper votre propre régie et vos outils.",
+                        title: "Apprentissage et test en commun",
+                        desc: "Explorez ensemble de nouveaux formats publicitaires et mesurez leur performance.",
                         icon: <Layers className="w-6 h-6 text-[#fc814a]" />
                     },
                     {
-                        title: "Nouvelles offres",
-                        desc: "Pack 'Influence IA' pour vos annonceurs premium au sein de la régie.",
+                        title: "Nouvelles offres régie GEO Addity",
+                        desc: "Proposez à vos annonceurs des solutions de référencement IA innovantes et différenciantes.",
                         icon: <Megaphone className="w-6 h-6 text-[#fc814a]" />
                     }
                 ].map((item, i) => (
@@ -47,9 +47,11 @@ export function OuestFranceSlide() {
                         </div>
                         <div>
                             <h3 className="font-['IBM_Plex_Mono',monospace] text-lg font-bold text-[#564256] mb-1">{item.title}</h3>
-                            <p className="font-['Inter',sans-serif] text-sm text-[#5f5c63] font-light leading-relaxed">
-                                {item.desc}
-                            </p>
+                            {item.desc && (
+                              <p className="font-['Inter',sans-serif] text-sm text-[#5f5c63] font-light leading-relaxed">
+                                  {item.desc}
+                              </p>
+                            )}
                         </div>
                     </motion.div>
                 ))}
@@ -69,7 +71,7 @@ export function OuestFranceSlide() {
                     {/* Équation visuelle */}
                     <div className="flex items-center justify-center gap-6">
                         <div className="bg-white rounded-xl p-4 border border-gray-100 shadow-sm flex items-center justify-center">
-                            <img src={ouestFranceLogo} className="h-12" alt="Ouest France" />
+                            <img src={ouestFranceLogo} className="h-12" alt="Ouest France" style={{ filter: 'brightness(0) saturate(100%) invert(15%) sepia(95%) saturate(6000%) hue-rotate(355deg) brightness(95%) contrast(115%)' }} />
                         </div>
                         <span className="text-2xl text-[#564256] font-bold">+</span>
                         <div className="bg-white rounded-xl p-3 border border-gray-100 shadow-sm flex items-center justify-center">

@@ -10,7 +10,7 @@ export function BusinessModelSlide() {
       <div className="flex flex-col h-full justify-center">
         <SectionBadge label="Business model" />
         <h2 className="text-3xl md:text-5xl font-['IBM_Plex_Mono',monospace] font-bold mb-10 text-[#564256] text-left leading-tight">
-          Un business model aligné sur la <span className="text-[#fc814a]">création de valeur</span>
+          Avec un business model aligné sur la <span className="text-[#fc814a]">création de valeur</span> et la réassurance
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">

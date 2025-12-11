@@ -36,7 +36,7 @@ export function SolutionSlide() {
                       <img 
                           src={spotFinderMockup} 
                           alt="Spot Finder - Interface de recherche GetSpotted" 
-                          className="w-full h-full object-contain"
+                          className="w-[60%] md:w-[55%] max-w-[60%] md:max-w-[55%] max-h-[60%] object-contain"
                       />
                   </div>
               </div>
@@ -46,7 +46,7 @@ export function SolutionSlide() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="w-full md:w-64 flex flex-col gap-3 items-center text-center md:self-center"
+            className="w-[150px] max-w-[150px] md:w-[150px] flex flex-col gap-3 items-center text-center md:self-center"
           >
             <span className="text-sm font-semibold text-[#564256]">Compatibilité</span>
 

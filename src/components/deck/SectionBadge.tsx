@@ -21,3 +21,4 @@ export function SectionBadge({ label, className }: SectionBadgeProps) {
     </div>
   );
 }
+

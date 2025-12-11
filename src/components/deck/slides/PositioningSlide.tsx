@@ -13,8 +13,8 @@ export function PositioningSlide() {
           Le Search change de <span className="text-[#fc814a]">paradigme</span>
         </h2>
 
-        <p className="text-[#5f5c63] font-['Inter',sans-serif] font-light text-left max-w-2xl mb-8 text-base md:text-lg leading-relaxed">
-            Il existe désormais une <strong className="font-bold text-[#564256]">décorrélation</strong> entre la position dans la SERP (Google) et les sources utilisées par l'IA : seuls 44 % des sources citées par ChatGPT proviennent du top Google. Pour exister, il faut être dans la source.
+        <p className="text-[#5f5c63] font-['Inter',sans-serif] font-light text-left max-w-4xl mb-8 text-base md:text-lg leading-relaxed">
+            Il existe une <strong className="font-bold text-[#564256]">décorrélation</strong> entre la position dans la SERP (Google) et les sources utilisées par l'IA : seuls 44 % des sources citées par ChatGPT proviennent du top Google. Pour exister, il faut être dans la source.
         </p>
 
         {/* Visual Diagram of Decorrelation */}
@@ -25,7 +25,7 @@ export function PositioningSlide() {
                 animate={{ opacity: 1, x: 0 }}
                 className="bg-gray-100 rounded-xl p-6 border border-gray-200 flex flex-col items-center relative overflow-hidden"
             >
-                <div className="absolute top-0 left-0 bg-gray-200 text-gray-600 text-[10px] font-bold px-2 py-1 font-['IBM_Plex_Mono',monospace]">HIER</div>
+                <div className="absolute top-0 left-0 bg-gray-200 text-gray-600 text-[10px] font-bold px-2 py-1 font-['IBM_Plex_Mono',monospace]">SEO</div>
                 <div className="flex items-center gap-4 mb-4 w-full justify-center">
                     <div className="flex flex-col items-center">
                         <div className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center mb-1">
@@ -52,7 +52,7 @@ export function PositioningSlide() {
                 animate={{ opacity: 1, x: 0 }}
                 className="bg-[#fff7ed] rounded-xl p-6 border border-[#ffedd5] flex flex-col items-center relative overflow-hidden"
             >
-                <div className="absolute top-0 left-0 bg-[#fc814a] text-white text-[10px] font-bold px-2 py-1 font-['IBM_Plex_Mono',monospace]">DEMAIN</div>
+                <div className="absolute top-0 left-0 bg-[#fc814a] text-white text-[10px] font-bold px-2 py-1 font-['IBM_Plex_Mono',monospace]">AI</div>
                 <div className="flex items-center gap-4 mb-4 w-full justify-center">
                      <div className="flex flex-col items-center">
                         <div className="w-10 h-10 bg-white border border-[#fc814a]/30 rounded-full flex items-center justify-center mb-1">
@@ -99,7 +99,7 @@ export function PositioningSlide() {
             
             {[
                 { label: "Objectif", bad: "Backlink (Jus SEO)", good: "Apparition dans les Sources" },
-                { label: "Cible", bad: "Robots Google (SERP)", good: "LLMs & Chatbots" },
+                { label: "Cible", bad: "Robots Google & users", good: "LLMs & users (+ robots Google)" },
                 { label: "Stratégie", bad: "Volume de liens", good: "Contexte & Précision" },
                 { label: "Résultat", bad: "Clics depuis Google", good: "Citation dans la Réponse" }
             ].map((row, i) => (

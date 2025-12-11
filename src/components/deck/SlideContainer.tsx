@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 import { motion } from 'motion/react';
 
 interface SlideContainerProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
 }
 

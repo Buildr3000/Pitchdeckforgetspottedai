@@ -17,10 +17,10 @@ export function ProblemSlide() {
           {[
             {
               icon: <Bot className="w-6 h-6 text-[#fc814a]" />,
-              title: "L'effondrement du trafic",
-              desc: "Les utilisateurs ne cherchent plus, ils veulent des réponses immédiates. Les 'Moteurs de Réponse' (ChatGPT, Perplexity) s'imposent.",
-              data: "-25%",
-              dataLabel: "de trafic Search d'ici 2026 (Gartner)"
+              title: "La fin du modèle Google",
+              desc: "Les utilisateurs basculent vers les modèles d'IA générative pour obtenir des réponses immédiates (ChatGPT, Perplexity).",
+              data: "2,5 Md",
+              dataLabel: "de requêtes ChatGPT"
             },
             {
               icon: <EyeOff className="w-6 h-6 text-[#fc814a]" />,
@@ -33,8 +33,8 @@ export function ProblemSlide() {
               icon: <Coins className="w-6 h-6 text-[#fc814a]" />,
               title: "Le paradoxe des éditeurs & médias",
               desc: "Pillés pour entraîner les modèles, les éditeurs perdent leur audience directe mais deviennent la matière première indispensable des LLMs.",
-              data: "100%",
-              dataLabel: "de dépendance à la Data Média"
+              data: "70%",
+              dataLabel: "de dépendance à la data web"
             }
           ].map((item, i) => (
             <motion.div 

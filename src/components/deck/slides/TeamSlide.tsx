@@ -20,7 +20,7 @@ export function TeamSlide() {
                 { 
                     name: "Alexis Maresca", 
                     role: "Co-Founder",
-                    desc: "Expert SEO & Growth",
+                    desc: "Marketing & Sales",
                     initials: "AM",
                     image: alexisPhoto
                 },

@@ -8,13 +8,13 @@ export function PositioningSlide() {
   return (
     <SlideContainer>
       <div className="flex flex-col h-full justify-center">
-        <SectionBadge label="Positionnement" />
+        <SectionBadge label="Contexte" />
         <h2 className="text-3xl md:text-5xl font-['IBM_Plex_Mono',monospace] font-bold mb-8 text-[#564256] text-left leading-tight">
-          Le Search change de <span className="text-[#fc814a]">paradigme</span>
+          Une approche fondamentalement <span className="text-[#fc814a]">différente</span>
         </h2>
 
-        <p className="text-[#5f5c63] font-['Inter',sans-serif] font-light text-left max-w-4xl mb-8 text-base md:text-lg leading-relaxed">
-            Il existe une <strong className="font-bold text-[#564256]">décorrélation</strong> entre la position dans la SERP (Google) et les sources utilisées par l'IA : seuls 44 % des sources citées par ChatGPT proviennent du top Google. Pour exister, il faut être dans la source.
+        <p className="text-[#5f5c63] font-['Inter',sans-serif] font-light text-left w-full mb-8 text-base md:text-lg leading-relaxed">
+            Il existe une <strong className="font-bold text-[#564256]">décorrélation</strong> entre la position dans la SERP (Google) et les sources utilisées par l'IA : seuls 12 % des sources citées par ChatGPT proviennent du top 10 Google. Pour exister, il faut être dans la source.
         </p>
 
         {/* Visual Diagram of Decorrelation */}
@@ -86,29 +86,6 @@ export function PositioningSlide() {
                   <span className="block">Indice de corrélation 0,664.</span>
                 </p>
             </motion.div>
-        </div>
-        
-        <div className="bg-white rounded-[24px] shadow-[0px_10px_40px_-10px_rgba(0,0,0,0.05)] border border-[rgba(232,232,232,0.5)] overflow-hidden max-w-4xl w-full mx-auto">
-            <div className="grid grid-cols-3 p-4 border-b border-gray-100 bg-gray-50/50">
-                <div className="col-span-1 flex items-center">
-                     <span className="font-['IBM_Plex_Mono',monospace] text-xs font-bold text-[#564256] uppercase tracking-wider">Au-delà du Netlinking</span>
-                </div>
-                <div className="col-span-1 text-center font-['IBM_Plex_Mono',monospace] text-sm text-[#5f5c63] uppercase tracking-wider font-bold">SEO Classique</div>
-                <div className="col-span-1 text-center font-['IBM_Plex_Mono',monospace] text-sm text-[#fc814a] font-bold uppercase tracking-wider">LLM SEO</div>
-            </div>
-            
-            {[
-                { label: "Objectif", bad: "Backlink (Jus SEO)", good: "Apparition dans les Sources" },
-                { label: "Cible", bad: "Robots Google & users", good: "LLMs & users (+ robots Google)" },
-                { label: "Stratégie", bad: "Volume de liens", good: "Contexte & Précision" },
-                { label: "Résultat", bad: "Clics depuis Google", good: "Citation dans la Réponse" }
-            ].map((row, i) => (
-                <div key={i} className="grid grid-cols-3 p-4 border-b border-gray-50 hover:bg-gray-50/30 transition-colors items-center">
-                    <div className="col-span-1 font-['Inter',sans-serif] text-sm font-medium text-[#564256]">{row.label}</div>
-                    <div className="col-span-1 text-center text-xs text-[#5f5c63] font-light">{row.bad}</div>
-                    <div className="col-span-1 text-center text-xs text-[#564256] font-semibold bg-orange-50/50 py-1 rounded-md border border-orange-100/50">{row.good}</div>
-                </div>
-            ))}
         </div>
       </div>
     </SlideContainer>

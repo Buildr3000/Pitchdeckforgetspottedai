@@ -5,6 +5,8 @@ import { Linkedin } from 'lucide-react';
 import { SectionBadge } from '../SectionBadge';
 import tomPhoto from '@/assets/tom-rouchy.jpg';
 import alexisPhoto from '@/assets/unnamed.jpg';
+import linkarLogo from '@/assets/linkar-logo.png';
+import combakLogo from '@/assets/combak-logo.png';
 
 export function TeamSlide() {
   return (
@@ -12,7 +14,7 @@ export function TeamSlide() {
       <div className="flex flex-col h-full justify-center">
         <SectionBadge label="Équipe" />
         <h2 className="text-3xl md:text-5xl font-['IBM_Plex_Mono',monospace] font-bold mb-10 text-[#564256] text-left leading-tight">
-          Une équipe <span className="text-[#fc814a]">complémentaire</span>
+          Une équipe complémentaire, <span className="text-[#fc814a]">spécialiste du SEO</span>
         </h2>
         
         <div className="flex justify-center gap-8 md:gap-16">
@@ -22,14 +24,18 @@ export function TeamSlide() {
                     role: "Co-Founder",
                     desc: "Marketing & Sales",
                     initials: "AM",
-                    image: alexisPhoto
+                    image: alexisPhoto,
+                    logo: linkarLogo,
+                    logoClass: "h-6 w-[100px] mt-5"
                 },
                 { 
                     name: "Tom Rouchy", 
                     role: "Co-Founder",
                     desc: "Tech & Product",
                     initials: "TR",
-                    image: tomPhoto
+                    image: tomPhoto,
+                    logo: combakLogo,
+                    logoClass: "h-10 w-[160px] mt-5"
                 }
             ].map((member, i) => (
                 <motion.div 
@@ -58,6 +64,9 @@ export function TeamSlide() {
                     <p className="font-['Inter',sans-serif] text-[#5f5c63] font-light text-sm max-w-[200px]">
                         {member.desc}
                     </p>
+                    {member.logo && (
+                        <img src={member.logo} alt="Logo" className={`${member.logoClass} object-contain`} />
+                    )}
                 </motion.div>
             ))}
         </div>

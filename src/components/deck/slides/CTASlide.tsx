@@ -22,7 +22,7 @@ export function CTASlide() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="font-['Inter',sans-serif] text-[#5f5c63] text-lg md:text-xl mb-12 max-w-2xl font-light leading-relaxed"
+          className="font-['Inter',sans-serif] text-[#5f5c63] text-lg md:text-xl mb-12 w-full font-light leading-relaxed"
         >
             Le Search a changé. Le modèle publicitaire aussi.<br/>
             Construisons ensemble le standard de demain.

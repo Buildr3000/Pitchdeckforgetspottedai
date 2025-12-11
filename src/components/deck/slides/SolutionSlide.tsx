@@ -14,7 +14,7 @@ export function SolutionSlide() {
           Une marketplace d'influence pour les&nbsp;<span className="text-[#fc814a]">IA</span>
         </h2>
         
-        <p className="text-[#5f5c63] font-['Inter',sans-serif] font-light text-left max-w-2xl mb-12 text-base md:text-lg leading-relaxed">
+        <p className="text-[#5f5c63] font-['Inter',sans-serif] font-light text-left w-full mb-12 text-base md:text-lg leading-relaxed">
           Identifiez les contenus sourcés par les LLMs et intégrez-y vos mentions de marque. Une solution simple pour influencer les réponses de l'IA directement à la source.
         </p>
 

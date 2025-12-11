@@ -23,8 +23,8 @@ const SLIDES = [
   SolutionSlide,
   MarketSlide,
   KpiSlide,
-  TeamSlide,
   BusinessModelSlide,
+  TeamSlide,
   OuestFranceSlide,
   CTASlide
 ];

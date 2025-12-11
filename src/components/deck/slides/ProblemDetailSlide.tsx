@@ -9,9 +9,9 @@ export function ProblemDetailSlide() {
     <SlideContainer
       children={
       <div className="flex flex-col h-full justify-center">
-        <SectionBadge label="Détail du problème" />
+        <SectionBadge label="Problème" />
         <h2 className="text-3xl md:text-5xl font-['IBM_Plex_Mono',monospace] font-bold mb-10 text-[#564256] text-left leading-tight">
-          Identifier les sources est un <span className="text-[#fc814a]">défi majeur</span>
+          Deux besoins, <span className="text-[#fc814a]">aucun pont</span>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start p-3 md:p-5">

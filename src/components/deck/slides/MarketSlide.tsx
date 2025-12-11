@@ -8,7 +8,7 @@ export function MarketSlide() {
   return (
     <SlideContainer>
       <div className="flex flex-col h-full justify-center">
-        <SectionBadge label="Marché" />
+        <SectionBadge label="Proposition de valeur" />
         <h2 className="text-3xl md:text-5xl font-['IBM_Plex_Mono',monospace] font-bold mb-10 text-[#564256] text-left leading-tight">
           Un modèle <span className="text-[#fc814a]">gagnant-gagnant</span>
         </h2>

@@ -8,7 +8,7 @@ export function ProblemSlide() {
   return (
     <SlideContainer>
       <div className="flex flex-col h-full justify-center">
-        <SectionBadge label="Le problème" />
+        <SectionBadge label="Contexte" />
         <h2 className="text-3xl md:text-5xl font-['IBM_Plex_Mono',monospace] font-bold mb-10 text-[#564256] text-left leading-tight">
           Le SEO traditionnel ne <span className="text-[#fc814a]">suffit plus</span>
         </h2>
